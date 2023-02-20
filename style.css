@@ -1,0 +1,559 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; 
+    /* 62.5% z 16px --->  1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.6rem;
+}
+
+.hero-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 48, 68, 0.4); 
+    z-index: -1;
+}
+
+.purple-color{
+    color: rgb(66, 48, 68);
+}
+
+/* sekcja NAWIGACJA */
+
+.navbar{
+    border-bottom: 1px solid rgb(66, 48, 68);
+}
+
+.navbar-brand{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.nav-link, .navbar-toggler-icon{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    margin-left: 2rem;
+}
+
+.navbar-toggler{
+    padding: 1em 1em; 
+}
+
+.navbar-toggler-icon{
+    font-size: 2rem;
+}
+
+/* sekcja HOME */
+
+.home{
+    position: relative;
+    top: 7.5rem;
+    height: 60rem;
+    background-image: url('img/portrait-3204843.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    margin-bottom: 8rem;
+}
+
+
+.home .btn{
+    margin-top: 6rem;
+    padding: 1em 2em;
+    line-height: 4rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.display-1{
+    margin-top: 3rem;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    text-decoration:line-through 2px rgb(66, 48, 68);;
+}
+
+.welcome-text{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+
+
+/* sekcja ABOUT US */
+
+
+.aboutus-box h3{
+  font-size: 2.4rem;
+font-weight: bold;
+}
+
+div.info div:nth-child(2n) div{
+    background-color:rgb(66, 48, 68);
+}
+div.info div:nth-child(2n-1) div{
+    color:rgb(66, 48, 68) !important
+}
+
+.aboutus-icon{
+    font-size: 2.5rem;
+}
+
+
+@media (min-width:280px){
+
+    .navbar-brand{
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    .navbar-toggler-icon{
+        font-size: 1.8rem;
+    
+    }
+
+    .display-1{
+        font-size: 3.5rem;
+    }
+    .welcome-text{
+       
+        font-size: 1.5rem;
+        padding: 0 1rem;
+   }
+}
+
+@media (min-width:320px){
+    .navbar-brand{
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+    
+
+@media(min-width: 768px){
+    .navbar-brand{
+        font-size: 2.2rem;
+        
+    }
+    .navbar-toggler-icon{
+        font-size: 2rem;
+    
+    }
+
+    .display-1{
+        font-size: 7rem;
+    }
+
+    div.info div:nth-child(3){
+        order:5
+    } 
+}
+
+@media(min-width: 992px){
+    div.info div:nth-child(3){
+        order:0
+    } 
+  }
+}
+
+
+/* sekcja ABOUTE ME */
+
+.aboutme{
+    padding-bottom: 6rem;
+    background-color: rgb(136, 117, 139);
+    /* border-bottom: 1px solid rgb(66, 48, 68); */
+    border-top: 1px solid rgb(66, 48, 68);
+}
+
+.aboutme h3{
+    font-size: 5rem;
+    padding: 6rem 0 2rem 0;
+}
+
+@media (min-width:280px){
+
+    .aboutme .container{
+        flex-direction: column;
+    }
+
+    /* .aboutme h3{
+        font-size: 3.5rem;
+        
+    } */
+    .aboutme img{
+        width: 90%;
+        margin: 0 auto;
+        object-fit:cover;
+    }
+
+    .aboutme p{
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width:576px){
+   
+    .aboutme h3{
+        font-size: 5rem;
+    }
+}
+
+
+@media (min-width:768px){
+   
+    .aboutme img{
+        width: 60%;
+    }
+
+    .aboutme p{
+        padding-top: 5rem;
+    }
+}
+
+
+@media (min-width:992px){
+   
+    .aboutme .container{
+        flex-direction: row;
+    }
+
+    .aboutme img{
+        width: 50%;
+    }
+
+    .aboutme p{
+        padding-top: 0rem;
+    }
+}
+
+@media (min-width:1200px){
+   
+    .aboutme img{
+        width: 40%;
+    }
+}
+
+
+/* sekcja PORTFOLIO */
+
+.portfolio{
+    padding-bottom: 6rem;
+    border-top: 1px solid rgb(66, 48, 68);
+}
+
+.portfolio h3{
+    font-size: 5rem;
+    padding: 6rem 0 2rem 0;
+}
+
+.portfolio p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 4px !important;
+}
+
+.portfolio nav{
+    background-color: transparent !important;
+    border-bottom: none;
+}
+
+.portfolio nav p{
+    margin: 0 auto !important;
+}
+
+.portfolio nav a{
+    border-color: transparent;
+    margin:0;
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    line-height: 3rem;
+    justify-content: center;
+}
+
+.portfolio div nav{
+    margin-left: 10rem;
+    margin-top: 5rem;
+} 
+
+
+.portfolio div nav a{
+   
+    border-left: 2px solid rgb(66, 48, 68);
+}
+
+.portfolio nav a:hover{
+    background-color:rgb(66, 48, 68);
+    color:aliceblue !important;
+}
+
+.portfolio nav a.active, .portfolio div nav a.active{
+    background-color: rgb(66, 48, 68);
+    color:aliceblue !important
+}
+
+
+
+/* sekcja FOTO */
+
+.foto{
+   justify-content: center;
+   /* padding-left: 5rem; */
+}
+
+
+@media(min-width: 1200px){
+
+    .foto{
+        margin-left: 30rem;
+        margin-top: 5rem;  
+    }
+}
+
+
+.foto div.itemBox{
+    position: relative;
+	display: block;
+    padding: 0;
+    width: 35rem;
+    height: 35rem;
+    margin: 0.5rem 0.5rem;
+    background-color: rgb(66, 48, 68);
+    overflow: hidden;
+}
+
+.foto div.itemBox.active{
+    justify-content: center;
+}
+
+.foto div.itemBox.hide{
+    display: none; 
+}
+
+
+.foto div.itemBox:hover{
+    opacity: 1;
+}
+
+.foto div img{
+    width: 35rem;
+    height: 35rem;
+    object-fit:cover;
+    transition: .3s;
+	transition-delay: 0.2s;
+    transform: scale3d(1.05, 1.05, 1);
+    padding: 0;
+}
+
+.foto div img:hover{
+    transform: scale3d(1, 1, 1)
+}
+
+.foto div:hover figcaption{
+    opacity: 1;
+}
+
+.foto h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.foto p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: "Questrial", sans-serif;
+    padding-top: 3rem;
+}
+
+
+.foto div figcaption {
+	text-align: left;
+	transition: .2s;
+	transition-delay: 0.2s;
+    position: absolute;
+    top:10%;
+	padding: 0 8%;
+	color: rgb(255, 255, 255);
+	opacity: 0;
+    width: 29rem;
+}
+
+.foto div:hover img{
+    opacity: 0.4;
+    transform: scale3d(1, 1, 1);
+}
+
+.foto div:hover figure figcaption{
+    opacity: 1;
+}
+
+
+/* sekcja CONTACT */
+
+.contact{
+    padding-bottom: 6rem;
+    background-color: rgb(136, 117, 139);
+    border-top: 1px solid rgb(66, 48, 68);
+}
+
+
+.contact h3{
+    font-size: 5rem;
+    padding: 6rem 0 4rem 0;
+}
+
+.contact p {
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+
+
+.contact .address p{
+    padding-bottom: 0;
+    font-size: 1.7rem;
+}
+
+.contact .address p a{
+    text-decoration:none !important;
+    color:rgb(248, 249, 250)
+}
+
+.contact .address p:nth-of-type(1){
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    font-weight: 550;
+    text-decoration:line-through 1.6px  rgb(136, 117, 139);
+}
+
+.contact .address i{
+    color: rgb(66, 48, 68);
+    padding-right: 0.5rem;
+}
+
+.contact .address p a:hover{
+    cursor: pointer;
+    color: rgb(66, 48, 68);
+}
+
+.contact .media i{
+font-size: 3rem;
+color: rgb(66, 48, 68);
+}
+
+
+.contact .media i:hover{
+    color:rgb(248, 249, 250)
+}
+
+
+.form form div{
+    width: 85%;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+.form form div:nth-last-of-type(1){
+    height: 15rem;
+    margin-bottom: 4rem;
+}
+
+.form form div textarea{
+    max-height: 15rem;
+}
+
+
+.form form button {
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+}
+
+.form form div input, .form form div textarea{
+    font-size: 1.7rem;
+    color: black;
+}
+
+.form ::placeholder{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form #emailHelp{
+   margin: 2.5rem auto 1.5rem auto;
+   line-height: 2rem;
+   font-size: 1.5rem;
+   justify-content: center;
+}
+
+/* Errors */
+
+.form div.error{
+    height: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color:rgb(124, 1, 1);
+    font-size: 1.5rem;
+}
+
+/* POPUP */
+
+.popup{
+    /* display:none; - w React */
+    min-width: 25rem;
+    height: 20rem;
+    background-color:rgb(66, 48, 68);
+    position: fixed;
+    bottom: 20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.popup p{
+    padding: 5rem 2rem 0 2rem;
+}
+
+.popup button{
+    height: 5rem;
+    min-width: 15rem;
+    line-height: 5rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(66, 48, 68);
+}
+
+
+/* Footer */
+
+footer{
+    height: 6rem;
+    background-color: rgb(39, 28, 40);
+    text-align: center;
+    line-height: 6rem;
+}
+
+footer p{
+    height: 6rem;
+}
